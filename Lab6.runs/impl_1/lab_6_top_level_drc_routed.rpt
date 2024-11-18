@@ -1,0 +1,41 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2024.1.2 (win64) Build 5164865 Thu Sep  5 14:37:11 MDT 2024
+| Date         : Wed Oct 30 20:43:23 2024
+| Host         : DESKTOP-GTUF0U5 running 64-bit major release  (build 9200)
+| Command      : report_drc -file lab_6_top_level_drc_routed.rpt -pb lab_6_top_level_drc_routed.pb -rpx lab_6_top_level_drc_routed.rpx
+| Design       : lab_6_top_level
+| Device       : xc7a35tcpg236-1
+| Speed File   : -1
+| Design State : Fully Routed
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Report DRC
+
+Table of Contents
+-----------------
+1. REPORT SUMMARY
+2. REPORT DETAILS
+
+1. REPORT SUMMARY
+-----------------
+            Netlist: netlist
+          Floorplan: design_1
+      Design limits: <entire design considered>
+           Ruledeck: default
+             Max violations: <unlimited>
+             Violations found: 1
++--------+----------+------------------+------------+
+| Rule   | Severity | Description      | Violations |
++--------+----------+------------------+------------+
+| DPIP-1 | Warning  | Input pipelining | 1          |
++--------+----------+------------------+------------+
+
+2. REPORT DETAILS
+-----------------
+DPIP-1#1 Warning
+Input pipelining  
+DSP ADC_PROC/scaled_adc_data_temp_reg input ADC_PROC/scaled_adc_data_temp_reg/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+
